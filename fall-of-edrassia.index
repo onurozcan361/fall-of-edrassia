@@ -7,6 +7,6 @@
 		</update>
 	</info>
 	<files>
-		<file name="class-samurai.xml" url="https://raw.githubusercontent.com/onurozcan361/clovia-campaign/master/fall-of-edrassia/items-wondrous.xml" />
+		<file name="items-wondrous.xml" url="https://raw.githubusercontent.com/onurozcan361/clovia-campaign/master/fall-of-edrassia/items-wondrous.xml" />
 	</files>
 </index>
