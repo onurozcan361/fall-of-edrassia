@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <index>
 	<info>
-		<name>Your Content</name>
-		<update version="1.0.1">
+		<name>Fall of Edrassia</name>
+		<update version="1.0.3">
 			<file name="fall-of-edrassia.index" url="https://raw.githubusercontent.com/onurozcan361/fall-of-edrassia/master/fall-of-edrassia.index" />
 		</update>
 	</info>
