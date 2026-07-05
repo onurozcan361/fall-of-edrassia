@@ -1,4 +1,43 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
-    
+    <info>
+        <name>Wondrous Items</name>
+        <file name="items-wondrous.xml" url="https://raw.githubusercontent.com/onurozcan361/clovia-campaign/master/fall-of-edrassia/items-wondrous.xml" />
+        <element name="The Force of Drahon" type="Magic Item" source="Fall of Edrassia" id="ID_FOE_MAGIC_ITEM_FORCE_OF_DRAHON">
+            <description>
+            <p> Is an arnament that grants the power of Drahon to the user.</p>
+            <p class="indent"> The wielder gets the ability to do Drahon's Smite. Drahon's smite adds 1d8 force + 1d8 radiant damage.</p>
+            </description>
+            <setters>
+                <set name="category">Wondrous Items</set>
+                <set name="cost" currency="gp">0</set>
+                <set name="weight" lb="12">12 lb.</set>
+                <set name="type">Wondrous Item</set>
+                <set name="rarity">Uncommon</set>
+                <set name="attunement">true</set>
+            </setters>
+        </element>
+
+        <element name="The Crovium" type="Magic Item" source="Fall of Edrassia" id="ID_FOE_MAGIC_ITEM_CROVIUM">
+            <description>
+            <p> The blessing of the Raven Queen became an object. </p>
+            <p class="indent">  The Crovium allows the user to tap into the power of the Raven Queen. When communed with, the Crovium can give:</p>
+            <ul>
+				<li>+4 dices for a duration.</li>
+				<li>Turn a dice into Nat 20</li>
+				<li>Revive a dead person</li>
+                <li>Speak with the dead as long as it takes</li>
+                <li>make the user invincible for a timeon</li>
+			</ul>
+            </description>
+            <setters>
+                <set name="category">Wondrous Items</set>
+                <set name="cost" currency="gp">0</set>
+                <set name="weight" lb="12">12 lb.</set>
+                <set name="type">Wondrous Item</set>
+                <set name="rarity">Rare</set>
+                <set name="attunement">true</set>
+            </setters>
+        </element>
+    </info>
 </elements>
