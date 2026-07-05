@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name>Wondrous Items</name>
-        <file name="items-wondrous.xml" url="https://raw.githubusercontent.com/onurozcan361/clovia-campaign/master/fall-of-edrassia/items-wondrous.xml" />
+        <file name="items-wondrous.xml" url="https://raw.githubusercontent.com/onurozcan361/fall-of-edrassia/master/fall-of-edrassia/items-wondrous.xml" />
         <element name="The Force of Drahon" type="Magic Item" source="Fall of Edrassia" id="ID_FOE_MAGIC_ITEM_FORCE_OF_DRAHON">
             <description>
             <p> Is an arnament that grants the power of Drahon to the user.</p>
