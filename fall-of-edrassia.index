@@ -2,7 +2,7 @@
 <index>
 	<info>
 		<name>Your Content</name>
-		<update version="1.0.0">
+		<update version="1.0.1">
 			<file name="fall-of-edrassia.index" url="https://raw.githubusercontent.com/onurozcan361/fall-of-edrassia/master/fall-of-edrassia.index" />
 		</update>
 	</info>
