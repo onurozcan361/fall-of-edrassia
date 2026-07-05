@@ -2,6 +2,11 @@
 <elements>
     <info>
         <name>Wondrous Items</name>
+        <update version="1.0.0">
+            <file name="items-wondrous.xml" url="https://raw.githubusercontent.com/onurozcan361/fall-of-edrassia/master/fall-of-edrassia/items-wondrous.xml" />
+
+        </update>
+    </info>
         <file name="items-wondrous.xml" url="https://raw.githubusercontent.com/onurozcan361/fall-of-edrassia/master/fall-of-edrassia/items-wondrous.xml" />
         <element name="The Force of Drahon" type="Magic Item" source="Fall of Edrassia" id="ID_FOE_MAGIC_ITEM_FORCE_OF_DRAHON">
             <description>
@@ -39,5 +44,5 @@
                 <set name="attunement">true</set>
             </setters>
         </element>
-    </info>
+    
 </elements>
