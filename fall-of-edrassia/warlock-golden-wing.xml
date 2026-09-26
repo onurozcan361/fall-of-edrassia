@@ -3,7 +3,7 @@
     <info>
         <name>Golden Wing Warlock</name>
         <description>Drahon’s Essence is an Otherworldly Patron option for the warlock, born from the surviving essence of the dead god-dragon Drahon the Golden.</description>
-        <update version="1.0.0">
+        <update version="1.0.1">
             <file name="warlock-golden-wing.xml" url="https://raw.githubusercontent.com/onurozcan361/fall-of-edrassia/master/fall-of-edrassia/warlock-golden-wing.xml" />
         </update>
     </info>
@@ -80,9 +80,6 @@
             <p class="indent">If the Herald is reduced to 0 hit points, it disappears in a harmless burst of golden sparks. You can restore it at the end of a short or long rest. You can also restore it immediately by expending a warlock spell slot as an action, causing it to reappear in an unoccupied space within 5 feet of you with all its hit points.</p>
             <p class="indent">In addition, when you are reduced to 0 hit points but not killed outright, you can cause your Golden Herald to sacrifice its manifested form. You drop to 1 hit point instead, and each creature of your choice within 10 feet of you takes radiant damage equal to your warlock level. The Herald then disappears as if it had been reduced to 0 hit points.</p>
             <p class="indent">Once this feature prevents you from falling to 0 hit points, you can’t use it again until you finish a long rest.</p>
-            <div class="reference">
-                <div element="ID_FOE_INFORMATION_GOLDEN_HERALD" />
-            </div>
         </description>
         <sheet>
             <description>You gain the service of the Golden Herald, a Tiny celestial spirit. While it is perched on you, you gain darkvision out to 60 feet (or +30 feet if you already have darkvision), you add your Charisma modifier to Wisdom (Perception) checks and your passive Perception, and you have advantage on saving throws against being frightened.
@@ -201,42 +198,6 @@
             <description>Melee Spell Attack: your spell attack modifier to hit, reach 5 ft., one creature. Hit: {{golden herald:gleaming rend:dice}}d4 + PB radiant damage.
             The Herald can use Gleaming Rend only when you command it to take this action. When you do so, you forgo one of your own attacks as part of the Attack action instead of using a bonus action. If you cannot make more than one attack with the Attack action, commanding this attack requires your action.</description>
         </sheet>
-    </element>
-
-    <element name="Golden Herald" type="Information" source="Fall of Edrassia" id="ID_FOE_INFORMATION_GOLDEN_HERALD">
-        <description>
-            <p style="margin-bottom:-5px"><em>Tiny celestial, unaligned</em></p>
-            <h4 style="margin-top:5px" />
-            <ul class="unstyled">
-                <li><strong>Armor Class</strong> 13 + PB</li>
-                <li><strong>Hit Points</strong> 5 + five times your warlock level</li>
-                <li><strong>Speed</strong> 10 ft., fly 40 ft.</li>
-            </ul>
-            <table style="text-align:center;margin-top:10px;margin-bottom:10px">
-                <thead><tr><td>STR</td><td>DEX</td><td>CON</td><td>INT</td><td>WIS</td><td>CHA</td></tr></thead>
-                <tr><td>4 (-3)</td><td>16 (+3)</td><td>12 (+1)</td><td>8 (-1)</td><td>14 (+2)</td><td>14 (+2)</td></tr>
-            </table>
-            <ul class="unstyled">
-                <li><strong>Saving Throws</strong> Dex +3 plus PB, Wis +2 plus PB</li>
-                <li><strong>Skills</strong> Perception +2 plus PB, Stealth +3 plus PB</li>
-                <li><strong>Damage Resistances</strong> necrotic, radiant</li>
-                <li><strong>Condition Immunities</strong> frightened</li>
-                <li><strong>Senses</strong> darkvision 60 ft., passive Perception 12 plus PB</li>
-                <li><strong>Languages</strong> understands the languages you speak; telepathy with you while within 100 ft.</li>
-                <li style="margin-bottom:-1em"><strong>Challenge</strong> —</li>
-                <li style="text-align:right; margin-top:-1em"><strong>Proficiency Bonus (PB)</strong> equals your bonus</li>
-            </ul>
-            <h4 style="margin-top:5px; margin-bottom:10px" />
-            <ul class="unstyled">
-                <li><strong><em>Essence Bound.</em></strong> The Herald adds your PB to any ability check or saving throw it makes that does not already include your PB.</li>
-                <li><strong><em>Flyby.</em></strong> The Herald does not provoke opportunity attacks when it flies out of an enemy’s reach.</li>
-                <li><strong><em>Illumination.</em></strong> The Herald can shed bright light in a 10-foot radius and dim light for an additional 10 feet, or extinguish this light, without using an action.</li>
-            </ul>
-            <h4 style="margin-top:10px">Actions</h4>
-            <ul class="unstyled">
-                <li><em><strong>Gleaming Rend.</strong> Melee Spell Attack:</em> your spell attack modifier to hit, reach 5 ft., one creature. <em>Hit:</em> 1d4 + PB radiant damage. The damage becomes 2d4 + PB at 10th level.</li>
-            </ul>
-        </description>
     </element>
 
     <element name="Wings of Intercession" type="Archetype Feature" source="Fall of Edrassia" id="ID_FOE_ARCHETYPE_FEATURE_DRAHONS_ESSENCE_WINGS_OF_INTERCESSION">
