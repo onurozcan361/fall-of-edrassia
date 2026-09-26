@@ -3,7 +3,7 @@
     <info>
         <name>Golden Wing Warlock</name>
         <description>Drahon’s Essence is an Otherworldly Patron option for the warlock, born from the surviving essence of the dead god-dragon Drahon the Golden.</description>
-        <update version="1.0.1">
+        <update version="1.0.2">
             <file name="warlock-golden-wing.xml" url="https://raw.githubusercontent.com/onurozcan361/fall-of-edrassia/master/fall-of-edrassia/warlock-golden-wing.xml" />
         </update>
     </info>
@@ -67,7 +67,7 @@
 
     <element name="Golden Herald" type="Archetype Feature" source="Fall of Edrassia" id="ID_FOE_ARCHETYPE_FEATURE_DRAHONS_ESSENCE_GOLDEN_HERALD">
         <description>
-            <p>When you choose this patron at 1st level, a fragment of Drahon’s Essence takes physical form and binds itself to you. This spirit is your <b>Golden Herald</b>, a Tiny celestial resembling a golden-winged drake, bird, or other small creature of your choice. Its appearance doesn’t change its game statistics.</p>
+            <p>When you choose this patron at 1st level, a fragment of Drahon’s Essence takes physical form and binds itself to you. This spirit is your Golden Herald, a Tiny celestial resembling a golden-winged drake, bird, or other small creature of your choice. Its appearance doesn’t change its game statistics.</p>
             <p class="indent">The Herald is friendly to you and your companions and obeys your commands. It uses the Golden Herald stat block and your proficiency bonus (PB) in several places. It acts immediately after your turn. It can move and use its reaction on its own, but the only action it takes unless you command it is Dodge. On your turn, you can use a bonus action to command it to take the Dash, Disengage, Help, Hide, or Search action. If you are incapacitated, it can take any of those actions without being commanded.</p>
             <p class="indent">While the Herald is perched on you, it shares your space, cannot be targeted, cannot take damage, and cannot take actions or reactions. It can mount or leave your shoulder using 5 feet of its movement.</p>
             <p class="indent">While the Herald is within 100 feet of you, you can communicate with it telepathically. As an action, you can see through its eyes and hear what it hears until the start of your next turn, gaining the benefits of its senses. During this time, you are deaf and blind to your own surroundings.</p>
@@ -213,7 +213,7 @@
 
     <element name="Aspect of the Golden Wing" type="Archetype Feature" source="Fall of Edrassia" id="ID_FOE_ARCHETYPE_FEATURE_DRAHONS_ESSENCE_ASPECT_OF_THE_GOLDEN_WING">
         <description>
-            <p>While your Golden Herald is perched on you, you can use a bonus action to merge with it and assume the <b>Aspect of the Golden Wing</b>. The transformation lasts for 10 minutes, until you end it as a bonus action, or until you are incapacitated. While transformed:</p>
+            <p>While your Golden Herald is perched on you, you can use a bonus action to merge with it and assume the Aspect of the Golden Wing. The transformation lasts for 10 minutes, until you end it as a bonus action, or until you are incapacitated. While transformed:</p>
             <ul>
                 <li>You manifest spectral wings and gain a flying speed of 40 feet.</li>
                 <li>You can pass through a space as narrow as 1 inch without squeezing.</li>
@@ -241,7 +241,7 @@
 
     <element name="Drahon’s Living Legacy" type="Archetype Feature" source="Fall of Edrassia" id="ID_FOE_ARCHETYPE_FEATURE_DRAHONS_ESSENCE_DRAHONS_LIVING_LEGACY">
         <description>
-            <p>You can briefly awaken the full power of Drahon’s Essence. As a bonus action, you enter the <b>Living Legacy</b> state for 1 minute. When you transform, choose any number of creatures you can see within 30 feet of you. Each chosen creature regains hit points equal to 2d8 + your Charisma modifier, and you can end either the charmed or frightened condition on it.</p>
+            <p>You can briefly awaken the full power of Drahon’s Essence. As a bonus action, you enter the Living Legacy state for 1 minute. When you transform, choose any number of creatures you can see within 30 feet of you. Each chosen creature regains hit points equal to 2d8 + your Charisma modifier, and you can end either the charmed or frightened condition on it.</p>
             <p class="indent">For the duration, you gain the following benefits:</p>
             <ul>
                 <li>Two immense golden wings appear from your back. You gain a flying speed of 60 feet and can hover.</li>
