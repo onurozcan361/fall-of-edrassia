@@ -3,7 +3,7 @@
     <info>
         <name>Golden Wing Warlock</name>
         <description>Drahon’s Essence is an Otherworldly Patron option for the warlock, born from the surviving essence of the dead god-dragon Drahon the Golden.</description>
-        <update version="1.0.4">
+        <update version="1.0.5">
             <file name="warlock-golden-wing.xml" url="https://raw.githubusercontent.com/onurozcan361/fall-of-edrassia/main/fall-of-edrassia/warlock-golden-wing.xml" />
         </update>
     </info>
@@ -134,6 +134,7 @@
             <stat name="companion:speed" value="10" bonus="base" />
             <stat name="companion:speed:fly" value="40" bonus="base" />
             <stat name="companion:proficiency" value="proficiency" bonus="base" />
+            <stat name="companion:proficiency" value="-2" bonus="base companion PB removal"/>
             <stat name="golden herald:gleaming rend:dice" value="1" bonus="base" />
             <stat name="golden herald:gleaming rend:dice" value="2" bonus="base" requirements="[level:warlock:10]" />
             <grant type="Companion Trait" id="ID_FOE_COMPANION_TRAIT_GOLDEN_HERALD_ESSENCE_BOUND" />
