@@ -2,12 +2,12 @@
 <index>
 	<info>
 		<name>Fall of Edrassia</name>
-		<update version="1.0.6">
-			<file name="fall-of-edrassia.index" url="https://raw.githubusercontent.com/onurozcan361/fall-of-edrassia/master/fall-of-edrassia.index" />
+		<update version="1.0.7">
+			<file name="fall-of-edrassia.index" url="https://raw.githubusercontent.com/onurozcan361/fall-of-edrassia/main/fall-of-edrassia.index" />
 		</update>
 	</info>
 	<files>
-		<file name="items-wondrous.xml" url="https://raw.githubusercontent.com/onurozcan361/fall-of-edrassia/master/fall-of-edrassia/items-wondrous.xml" />
-		<file name="warlock-golden-wing.xml" url="https://raw.githubusercontent.com/onurozcan361/fall-of-edrassia/master/fall-of-edrassia/warlock-golden-wing.xml" />
+		<file name="items-wondrous.xml" url="https://raw.githubusercontent.com/onurozcan361/fall-of-edrassia/main/fall-of-edrassia/items-wondrous.xml" />
+		<file name="warlock-golden-wing.xml" url="https://raw.githubusercontent.com/onurozcan361/fall-of-edrassia/main/fall-of-edrassia/warlock-golden-wing.xml" />
 	</files>
 </index>

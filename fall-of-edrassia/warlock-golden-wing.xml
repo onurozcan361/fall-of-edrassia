@@ -3,8 +3,8 @@
     <info>
         <name>Golden Wing Warlock</name>
         <description>Drahon’s Essence is an Otherworldly Patron option for the warlock, born from the surviving essence of the dead god-dragon Drahon the Golden.</description>
-        <update version="1.0.2">
-            <file name="warlock-golden-wing.xml" url="https://raw.githubusercontent.com/onurozcan361/fall-of-edrassia/master/fall-of-edrassia/warlock-golden-wing.xml" />
+        <update version="1.0.3">
+            <file name="warlock-golden-wing.xml" url="https://raw.githubusercontent.com/onurozcan361/fall-of-edrassia/main/fall-of-edrassia/warlock-golden-wing.xml" />
         </update>
     </info>
 
@@ -67,153 +67,41 @@
 
     <element name="Golden Herald" type="Archetype Feature" source="Fall of Edrassia" id="ID_FOE_ARCHETYPE_FEATURE_DRAHONS_ESSENCE_GOLDEN_HERALD">
         <description>
-            <p>When you choose this patron at 1st level, a fragment of Drahon’s Essence takes physical form and binds itself to you. This spirit is your Golden Herald, a Tiny celestial resembling a golden-winged drake, bird, or other small creature of your choice. Its appearance doesn’t change its game statistics.</p>
-            <p class="indent">The Herald is friendly to you and your companions and obeys your commands. It uses the Golden Herald stat block and your proficiency bonus (PB) in several places. It acts immediately after your turn. It can move and use its reaction on its own, but the only action it takes unless you command it is Dodge. On your turn, you can use a bonus action to command it to take the Dash, Disengage, Help, Hide, or Search action. If you are incapacitated, it can take any of those actions without being commanded.</p>
+            <p>When you choose this patron at 1st level, a fragment of Drahon’s Essence takes physical form and binds itself to you. This spirit is your Golden Herald, a Tiny celestial creature resembling a golden-winged drake, bird, or other small creature of your choice. It is friendly to you and your companions and obeys your commands.</p>
             <p class="indent">While the Herald is perched on you, it shares your space, cannot be targeted, cannot take damage, and cannot take actions or reactions. It can mount or leave your shoulder using 5 feet of its movement.</p>
-            <p class="indent">While the Herald is within 100 feet of you, you can communicate with it telepathically. As an action, you can see through its eyes and hear what it hears until the start of your next turn, gaining the benefits of its senses. During this time, you are deaf and blind to your own surroundings.</p>
+            <p class="indent">While the Herald is within 100 feet of you, you can communicate with it telepathically.</p>
             <p class="indent">While the Herald is perched on you, you gain the following benefits:</p>
             <ul>
                 <li>You gain darkvision out to 60 feet. If you already have darkvision, its range increases by 30 feet.</li>
                 <li>You add your Charisma modifier to Wisdom (Perception) checks and to your passive Wisdom (Perception) score.</li>
                 <li>You have advantage on saving throws against being frightened.</li>
             </ul>
-            <p class="indent">If the Herald is reduced to 0 hit points, it disappears in a harmless burst of golden sparks. You can restore it at the end of a short or long rest. You can also restore it immediately by expending a warlock spell slot as an action, causing it to reappear in an unoccupied space within 5 feet of you with all its hit points.</p>
-            <p class="indent">In addition, when you are reduced to 0 hit points but not killed outright, you can cause your Golden Herald to sacrifice its manifested form. You drop to 1 hit point instead, and each creature of your choice within 10 feet of you takes radiant damage equal to your warlock level. The Herald then disappears as if it had been reduced to 0 hit points.</p>
-            <p class="indent">Once this feature prevents you from falling to 0 hit points, you can’t use it again until you finish a long rest.</p>
         </description>
         <sheet>
-            <description>You gain the service of the Golden Herald, a Tiny celestial spirit. While it is perched on you, you gain darkvision out to 60 feet (or +30 feet if you already have darkvision), you add your Charisma modifier to Wisdom (Perception) checks and your passive Perception, and you have advantage on saving throws against being frightened.
-            While the Herald is within 100 feet of you, you can communicate with it telepathically, and as an action you can see through its eyes and hear what it hears until the start of your next turn.
-            If the Herald is reduced to 0 hit points, it disappears and can be restored at the end of a short or long rest, or immediately by expending a warlock spell slot as an action.
-            When you are reduced to 0 hit points but not killed outright, you can cause the Herald to sacrifice itself: you drop to 1 hit point instead, and each creature of your choice within 10 feet of you takes radiant damage equal to your warlock level. You can’t use this again until you finish a long rest.</description>
+            <description>While your Golden Herald is perched on you, you gain darkvision out to 60 feet (or +30 feet if you already have darkvision), you add your Charisma modifier to Wisdom (Perception) checks and to your passive Wisdom (Perception) score, and you have advantage on saving throws against being frightened.</description>
         </sheet>
         <rules>
-            <select type="Companion" name="Golden Herald" supports="Golden Herald" default="ID_FOE_COMPANION_GOLDEN_HERALD" />
+            <stat name="golden herald:perception" value="charisma:modifier" />
         </rules>
-    </element>
-
-    <!--Companion-->
-    <element name="Golden Herald" type="Companion" source="Fall of Edrassia" id="ID_FOE_COMPANION_GOLDEN_HERALD">
-        <supports>Golden Herald</supports>
-        <description>
-            <p>A fragment of Drahon’s Essence given physical form: a golden draconic spirit that is friendly to you and your companions and obeys your commands.</p>
-            <p><b>Proficiency Bonus (PB)</b> equals your bonus</p>
-        </description>
-        <setters>
-            <set name="size">Tiny</set>
-            <set name="type">Celestial</set>
-            <set name="alignment">unaligned</set>
-            <set name="ac">13 + PB</set>
-            <set name="hp">5 + five times your warlock level</set>
-            <set name="speed">10 ft., fly 40 ft.</set>
-            <set name="strength">4</set>
-            <set name="dexterity">16</set>
-            <set name="constitution">12</set>
-            <set name="intelligence">8</set>
-            <set name="wisdom">14</set>
-            <set name="charisma">14</set>
-            <set name="saves">Dex +3 plus PB, Wis +2 plus PB</set>
-            <set name="skills">Perception +2 plus PB, Stealth +3 plus PB</set>
-            <set name="resistances">necrotic, radiant</set>
-            <set name="conditionImmunities">frightened</set>
-            <set name="senses">darkvision 60 ft., passive Perception 12 plus PB</set>
-            <set name="languages">understands the languages you speak; telepathy with you while within 100 ft.</set>
-            <set name="challenge">—</set>
-            <set name="traits">ID_FOE_COMPANION_TRAIT_GOLDEN_HERALD_ESSENCE_BOUND,ID_FOE_COMPANION_TRAIT_GOLDEN_HERALD_FLYBY,ID_FOE_COMPANION_TRAIT_GOLDEN_HERALD_ILLUMINATION</set>
-            <set name="actions">ID_FOE_COMPANION_ACTION_GOLDEN_HERALD_GLEAMING_REND</set>
-        </setters>
-        <rules>
-            <stat name="companion:ac" value="13" />
-            <stat name="companion:ac" value="proficiency" />
-            <stat name="companion:hp:max" value="5" bonus="base" />
-            <stat name="companion:hp:max" value="level:warlock" />
-            <stat name="companion:hp:max" value="level:warlock" />
-            <stat name="companion:hp:max" value="level:warlock" />
-            <stat name="companion:hp:max" value="level:warlock" />
-            <stat name="companion:hp:max" value="level:warlock" />
-            <stat name="companion:speed" value="10" bonus="base" />
-            <stat name="companion:speed:fly" value="40" bonus="base" />
-            <stat name="companion:proficiency" value="proficiency" bonus="base" />
-            <stat name="golden herald:gleaming rend:dice" value="1" bonus="base" />
-            <stat name="golden herald:gleaming rend:dice" value="2" bonus="base" requirements="[level:warlock:10]" />
-            <grant type="Companion Trait" id="ID_FOE_COMPANION_TRAIT_GOLDEN_HERALD_ESSENCE_BOUND" />
-        </rules>
-    </element>
-    <element name="Essence Bound" type="Companion Trait" source="Fall of Edrassia" id="ID_FOE_COMPANION_TRAIT_GOLDEN_HERALD_ESSENCE_BOUND">
-        <description>
-            <p>The Herald adds your proficiency bonus to any ability check or saving throw it makes that doesn’t already include your proficiency bonus.</p>
-        </description>
-        <sheet display="false">
-            <description>The Herald adds your proficiency bonus to any ability check or saving throw it makes that doesn’t already include your proficiency bonus.</description>
-        </sheet>
-        <rules>
-            <stat name="companion:acrobatics:proficiency" value="companion:proficiency" bonus="base" />
-            <stat name="companion:animal handling:proficiency" value="companion:proficiency" bonus="base" />
-            <stat name="companion:arcana:proficiency" value="companion:proficiency" bonus="base" />
-            <stat name="companion:athletics:proficiency" value="companion:proficiency" bonus="base" />
-            <stat name="companion:deception:proficiency" value="companion:proficiency" bonus="base" />
-            <stat name="companion:history:proficiency" value="companion:proficiency" bonus="base" />
-            <stat name="companion:insight:proficiency" value="companion:proficiency" bonus="base" />
-            <stat name="companion:intimidation:proficiency" value="companion:proficiency" bonus="base" />
-            <stat name="companion:investigation:proficiency" value="companion:proficiency" bonus="base" />
-            <stat name="companion:medicine:proficiency" value="companion:proficiency" bonus="base" />
-            <stat name="companion:nature:proficiency" value="companion:proficiency" bonus="base" />
-            <stat name="companion:perception:proficiency" value="companion:proficiency" bonus="base" />
-            <stat name="companion:performance:proficiency" value="companion:proficiency" bonus="base" />
-            <stat name="companion:persuasion:proficiency" value="companion:proficiency" bonus="base" />
-            <stat name="companion:religion:proficiency" value="companion:proficiency" bonus="base" />
-            <stat name="companion:sleight of hand:proficiency" value="companion:proficiency" bonus="base" />
-            <stat name="companion:stealth:proficiency" value="companion:proficiency" bonus="base" />
-            <stat name="companion:survival:proficiency" value="companion:proficiency" bonus="base" />
-            <stat name="companion:strength:save:proficiency" value="companion:proficiency" bonus="base" />
-            <stat name="companion:dexterity:save:proficiency" value="companion:proficiency" bonus="base" />
-            <stat name="companion:constitution:save:proficiency" value="companion:proficiency" bonus="base" />
-            <stat name="companion:intelligence:save:proficiency" value="companion:proficiency" bonus="base" />
-            <stat name="companion:wisdom:save:proficiency" value="companion:proficiency" bonus="base" />
-            <stat name="companion:charisma:save:proficiency" value="companion:proficiency" bonus="base" />
-        </rules>
-    </element>
-    <element name="Flyby" type="Companion Trait" source="Fall of Edrassia" id="ID_FOE_COMPANION_TRAIT_GOLDEN_HERALD_FLYBY">
-        <description>
-            <p>The Herald doesn’t provoke opportunity attacks when it flies out of an enemy’s reach.</p>
-        </description>
-        <sheet>
-            <description>The Herald doesn’t provoke opportunity attacks when it flies out of an enemy’s reach.</description>
-        </sheet>
-    </element>
-    <element name="Illumination" type="Companion Trait" source="Fall of Edrassia" id="ID_FOE_COMPANION_TRAIT_GOLDEN_HERALD_ILLUMINATION">
-        <description>
-            <p>The Herald can shed bright light in a 10-foot radius and dim light for an additional 10 feet, or extinguish this light, without using an action.</p>
-        </description>
-        <sheet>
-            <description>The Herald can shed bright light in a 10-foot radius and dim light for an additional 10 feet, or extinguish this light, without using an action.</description>
-        </sheet>
-    </element>
-    <element name="Gleaming Rend" type="Companion Action" source="Fall of Edrassia" id="ID_FOE_COMPANION_ACTION_GOLDEN_HERALD_GLEAMING_REND">
-        <description>
-            <p><i>Melee Spell Attack:</i> your spell attack modifier to hit, reach 5 ft., one creature. <i>Hit:</i> 1d4 + PB radiant damage. The damage becomes 2d4 + PB at 10th level.</p>
-            <p class="indent">The Herald can use Gleaming Rend only when you command it to take this action. When you do so, you forgo one of your own attacks as part of the Attack action instead of using a bonus action. If you cannot make more than one attack with the Attack action, commanding this attack requires your action.</p>
-        </description>
-        <sheet>
-            <description>Melee Spell Attack: your spell attack modifier to hit, reach 5 ft., one creature. Hit: {{golden herald:gleaming rend:dice}}d4 + PB radiant damage.
-            The Herald can use Gleaming Rend only when you command it to take this action. When you do so, you forgo one of your own attacks as part of the Attack action instead of using a bonus action. If you cannot make more than one attack with the Attack action, commanding this attack requires your action.</description>
-        </sheet>
     </element>
 
     <element name="Wings of Intercession" type="Archetype Feature" source="Fall of Edrassia" id="ID_FOE_ARCHETYPE_FEATURE_DRAHONS_ESSENCE_WINGS_OF_INTERCESSION">
         <description>
-            <p>Drahon’s Essence moves to place you between destruction and its victim. When you or a creature you can see within 30 feet of you takes damage, you can use your reaction to manifest spectral golden wings around that creature. Reduce the damage by 1d10 + your Charisma modifier + your warlock level.</p>
-            <p class="indent">After the damage is reduced, the protected creature can move up to 10 feet to an unoccupied space it can see. This movement doesn’t provoke opportunity attacks. If your Golden Herald is present, you can also cause it to teleport to the protected creature’s space and perch on it. While perched on another creature this way, the Herald grants no benefits and returns to you at the start of your next turn.</p>
+            <p>Starting at 6th level, Drahon’s Essence moves to place you between destruction and its victim. When you or a creature you can see within 30 feet of you takes damage, you can use your reaction to manifest spectral golden wings around that creature. Reduce the damage by 1d10 + your Charisma modifier + your warlock level.</p>
+            <p class="indent">After the damage is reduced, the protected creature can move up to 10 feet to an unoccupied space it can see. This movement doesn’t provoke opportunity attacks.</p>
             <p class="indent">You can use this feature a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</p>
         </description>
-        <sheet action="Reaction" usage="{{proficiency}}/Long Rest">
-            <description>When you or a creature you can see within 30 feet of you takes damage, you can manifest spectral golden wings around that creature, reducing the damage by 1d10 + {{charisma:modifier}} + your warlock level. The protected creature can then move up to 10 feet to an unoccupied space it can see without provoking opportunity attacks. If your Golden Herald is present, you can cause it to teleport to the protected creature’s space and perch on it; while perched this way it grants no benefits and returns to you at the start of your next turn.</description>
+        <sheet action="Reaction" usage="{{wings of intercession:count}}/Long Rest">
+            <description>When you or a creature you can see within 30 feet of you takes damage, you can manifest spectral golden wings around that creature, reducing the damage by 1d10 + your Charisma modifier + your warlock level. The protected creature can then move up to 10 feet to an unoccupied space it can see without provoking opportunity attacks.</description>
         </sheet>
+        <rules>
+            <stat name="wings of intercession:count" value="proficiency" bonus="base" />
+        </rules>
     </element>
 
     <element name="Aspect of the Golden Wing" type="Archetype Feature" source="Fall of Edrassia" id="ID_FOE_ARCHETYPE_FEATURE_DRAHONS_ESSENCE_ASPECT_OF_THE_GOLDEN_WING">
         <description>
-            <p>While your Golden Herald is perched on you, you can use a bonus action to merge with it and assume the Aspect of the Golden Wing. The transformation lasts for 10 minutes, until you end it as a bonus action, or until you are incapacitated. While transformed:</p>
+            <p>Also at 6th level, while your Golden Herald is perched on you, you can use a bonus action to merge with it and assume the Aspect of the Golden Wing. The transformation lasts for 10 minutes, until you end it as a bonus action, or until you are incapacitated. While transformed:</p>
             <ul>
                 <li>You manifest spectral wings and gain a flying speed of 40 feet.</li>
                 <li>You can pass through a space as narrow as 1 inch without squeezing.</li>
@@ -228,7 +116,7 @@
 
     <element name="The Essence Endures" type="Archetype Feature" source="Fall of Edrassia" id="ID_FOE_ARCHETYPE_FEATURE_DRAHONS_ESSENCE_THE_ESSENCE_ENDURES">
         <description>
-            <p>The remnant within you refuses to allow Drahon’s light to be extinguished again. You gain resistance to necrotic and radiant damage, and you have advantage on death saving throws.</p>
+            <p>Starting at 10th level, the remnant within you refuses to allow Drahon’s light to be extinguished again. You gain resistance to necrotic and radiant damage, and you have advantage on death saving throws.</p>
         </description>
         <sheet>
             <description>You gain resistance to necrotic and radiant damage, and you have advantage on death saving throws.</description>
@@ -241,18 +129,18 @@
 
     <element name="Drahon’s Living Legacy" type="Archetype Feature" source="Fall of Edrassia" id="ID_FOE_ARCHETYPE_FEATURE_DRAHONS_ESSENCE_DRAHONS_LIVING_LEGACY">
         <description>
-            <p>You can briefly awaken the full power of Drahon’s Essence. As a bonus action, you enter the Living Legacy state for 1 minute. When you transform, choose any number of creatures you can see within 30 feet of you. Each chosen creature regains hit points equal to 2d8 + your Charisma modifier, and you can end either the charmed or frightened condition on it.</p>
+            <p>Starting at 14th level, you can briefly awaken the full power of Drahon’s Essence. As a bonus action, you enter the Living Legacy state for 1 minute. When you transform, choose any number of creatures you can see within 30 feet of you. Each chosen creature regains hit points equal to 2d8 + your Charisma modifier, and you can end either the charmed or frightened condition on it.</p>
             <p class="indent">For the duration, you gain the following benefits:</p>
             <ul>
                 <li>Two immense golden wings appear from your back. You gain a flying speed of 60 feet and can hover.</li>
-                <li>You shed bright sunlight in a 30-foot radius and dim light for an additional 30 feet.</li>
+                <li>You shed bright light in a 30-foot radius and dim light for an additional 30 feet.</li>
                 <li>Once on each of your turns when you deal damage to a creature, you can deal an additional 2d8 radiant damage to that creature.</li>
                 <li>When a creature you can see within 30 feet of you takes damage, you can use your reaction to grant it resistance to that instance of damage. If you do, the Living Legacy state ends at the end of the current turn.</li>
             </ul>
             <p class="indent">Once you use this feature, you can’t use it again until you finish a long rest.</p>
         </description>
         <sheet action="Bonus Action" usage="1/Long Rest">
-            <description>You enter the Living Legacy state for 1 minute. When you transform, choose any number of creatures you can see within 30 feet of you; each regains 2d8 + {{charisma:modifier}} hit points, and you can end the charmed or frightened condition on it.
+            <description>You enter the Living Legacy state for 1 minute. When you transform, choose any number of creatures you can see within 30 feet of you; each regains 2d8 + your Charisma modifier hit points, and you can end the charmed or frightened condition on it.
             For the duration: you gain a flying speed of 60 feet and can hover; you shed bright light in a 30-foot radius and dim light for an additional 30 feet; once on each of your turns when you deal damage to a creature, you can deal an additional 2d8 radiant damage to it; and when a creature you can see within 30 feet of you takes damage, you can use your reaction to grant it resistance to that instance of damage, ending the Living Legacy state at the end of the current turn.</description>
         </sheet>
     </element>

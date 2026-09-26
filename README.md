@@ -1,7 +1,7 @@
 # fall-of-edrassia
 additional content to extend [Aurora](https://aurorabuilder.com/), by yourname
 
-index url: https://raw.githubusercontent.com/onurozcan361/fall-of-edrassia/master/fall-of-edrassia.index
+index url: https://raw.githubusercontent.com/onurozcan361/fall-of-edrassia/main/fall-of-edrassia.index
 
 ---
 
