@@ -3,7 +3,7 @@
     <info>
         <name>Golden Wing Warlock</name>
         <description>Drahon’s Essence is an Otherworldly Patron option for the warlock, born from the surviving essence of the dead god-dragon Drahon the Golden.</description>
-        <update version="1.0.5">
+        <update version="1.0.6">
             <file name="warlock-golden-wing.xml" url="https://raw.githubusercontent.com/onurozcan361/fall-of-edrassia/main/fall-of-edrassia/warlock-golden-wing.xml" />
         </update>
     </info>
@@ -12,26 +12,37 @@
     <element name="Drahon’s Essence" type="Archetype" source="Fall of Edrassia" id="ID_FOE_ARCHETYPE_DRAHONS_ESSENCE">
         <supports>Otherworldly Patron</supports>
         <description>
-            <p>Drahon the Golden is dead, but a god-dragon does not vanish as mortals do. Fragments of his sacred essence still cling to souls, relics, dragons, and the wounded land of Edrassia. A rare few are chosen by that essence. They dream of vast golden wings spread across a darkened sky, awaken with light beneath their skin, and hear a distant heartbeat whenever innocent blood is spilled.</p>
-            <p class="indent">A Golden Wing Warlock does not bargain with Drahon himself. Instead, the Warlock carries a living fragment of his final purpose: life, light, protection, courage, and restoration. This fragment takes the form of a golden draconic spirit called a Golden Herald. As the Warlock’s bond grows, the spirit and bearer become increasingly difficult to separate.</p>
-            <p class="indent">Some Golden Wings see themselves as Drahon’s heirs. Others fear that every use of his power consumes another piece of what remains of him.</p>
+            <p>Drahon the Golden was slain, but his death did not extinguish his power. Fragments of his divine essence, known by some as Golden Embers, still cling to living souls, ancient relics, holy trees, and the blood of dragons. A Golden Wing Warlock carries one of these fragments.</p>
+            <p class="indent">This bond is not an ordinary pact. Drahon does not speak from a distant plane or demand service through whispered commands. His essence survives as instinct, memory, and purpose: preserve life, stand against terror, restore what can be restored, and become the shield when no other shield remains.</p>
+            <p class="indent">The first sign of this bond is a celestial creature called a Golden Sentinel. As the Warlock grows stronger, the Sentinel is revealed to be more than a servant. It is the visible half of the same divine fragment burning within the Warlock.</p>
+            <h5>Golden Wing Manifestations</h5>
+            <p class="indent">The essence within each Golden Wing Warlock can manifest differently. Choose or create one sign of the pact.</p>
+            <table>
+                <thead><tr><td>d6</td><td>Manifestation</td></tr></thead>
+                <tr><td>1</td><td>Fine golden cracks appear across your skin when you protect another creature.</td></tr>
+                <tr><td>2</td><td>Your shadow displays draconic wings whenever you confront something you fear.</td></tr>
+                <tr><td>3</td><td>Your heartbeat is joined by a distant second heartbeat while your Sentinel is present.</td></tr>
+                <tr><td>4</td><td>Your blood briefly shines like molten gold when exposed to air.</td></tr>
+                <tr><td>5</td><td>Your voice carries a deep draconic resonance when you invoke Drahon’s name.</td></tr>
+                <tr><td>6</td><td>Warm golden embers drift from your body whenever you restore life or consciousness.</td></tr>
+            </table>
             <div element="ID_FOE_ARCHETYPE_FEATURE_DRAHONS_ESSENCE_EXPANDED_SPELL_LIST" />
-            <div element="ID_FOE_ARCHETYPE_FEATURE_DRAHONS_ESSENCE_GOLDEN_HERALD" />
-            <div element="ID_FOE_ARCHETYPE_FEATURE_DRAHONS_ESSENCE_WINGS_OF_INTERCESSION" />
-            <div element="ID_FOE_ARCHETYPE_FEATURE_DRAHONS_ESSENCE_ASPECT_OF_THE_GOLDEN_WING" />
-            <div element="ID_FOE_ARCHETYPE_FEATURE_DRAHONS_ESSENCE_THE_ESSENCE_ENDURES" />
-            <div element="ID_FOE_ARCHETYPE_FEATURE_DRAHONS_ESSENCE_DRAHONS_LIVING_LEGACY" />
+            <div element="ID_FOE_ARCHETYPE_FEATURE_DRAHONS_ESSENCE_GOLDEN_SENTINEL" />
+            <div element="ID_FOE_ARCHETYPE_FEATURE_DRAHONS_ESSENCE_ONE_SOUL_TWO_WINGS" />
+            <div element="ID_FOE_ARCHETYPE_FEATURE_DRAHONS_ESSENCE_THE_EMBER_ENDURES" />
+            <div element="ID_FOE_ARCHETYPE_FEATURE_DRAHONS_ESSENCE_THE_SENTINELS_SACRIFICE" />
+            <div element="ID_FOE_ARCHETYPE_FEATURE_DRAHONS_ESSENCE_DRAHONS_FINAL_DAWN" />
         </description>
         <sheet display="false">
-            <description>A Golden Wing Warlock carries a living fragment of the dead god-dragon Drahon: a golden draconic spirit called a Golden Herald.</description>
+            <description>A Golden Wing Warlock carries a living fragment of the dead god-dragon Drahon: a golden celestial spirit called a Golden Sentinel.</description>
         </sheet>
         <rules>
             <grant type="Archetype Feature" id="ID_FOE_ARCHETYPE_FEATURE_DRAHONS_ESSENCE_EXPANDED_SPELL_LIST" level="1"/>
-            <grant type="Archetype Feature" id="ID_FOE_ARCHETYPE_FEATURE_DRAHONS_ESSENCE_GOLDEN_HERALD" level="1"/>
-            <grant type="Archetype Feature" id="ID_FOE_ARCHETYPE_FEATURE_DRAHONS_ESSENCE_WINGS_OF_INTERCESSION" level="6"/>
-            <grant type="Archetype Feature" id="ID_FOE_ARCHETYPE_FEATURE_DRAHONS_ESSENCE_ASPECT_OF_THE_GOLDEN_WING" level="6"/>
-            <grant type="Archetype Feature" id="ID_FOE_ARCHETYPE_FEATURE_DRAHONS_ESSENCE_THE_ESSENCE_ENDURES" level="10"/>
-            <grant type="Archetype Feature" id="ID_FOE_ARCHETYPE_FEATURE_DRAHONS_ESSENCE_DRAHONS_LIVING_LEGACY" level="14"/>
+            <grant type="Archetype Feature" id="ID_FOE_ARCHETYPE_FEATURE_DRAHONS_ESSENCE_GOLDEN_SENTINEL" level="1"/>
+            <grant type="Archetype Feature" id="ID_FOE_ARCHETYPE_FEATURE_DRAHONS_ESSENCE_ONE_SOUL_TWO_WINGS" level="6"/>
+            <grant type="Archetype Feature" id="ID_FOE_ARCHETYPE_FEATURE_DRAHONS_ESSENCE_THE_EMBER_ENDURES" level="10"/>
+            <grant type="Archetype Feature" id="ID_FOE_ARCHETYPE_FEATURE_DRAHONS_ESSENCE_THE_SENTINELS_SACRIFICE" level="10"/>
+            <grant type="Archetype Feature" id="ID_FOE_ARCHETYPE_FEATURE_DRAHONS_ESSENCE_DRAHONS_FINAL_DAWN" level="14"/>
         </rules>
     </element>
 
@@ -41,10 +52,10 @@
             <h5>Drahon’s Essence Expanded Spells</h5>
             <table>
                 <thead><tr><td>Spell Level</td><td>Spells</td></tr></thead>
-                <tr><td>1st</td><td><em>bless, cure wounds</em></td></tr>
+                <tr><td>1st</td><td><em>cure wounds, heroism</em></td></tr>
                 <tr><td>2nd</td><td><em>aid, lesser restoration</em></td></tr>
                 <tr><td>3rd</td><td><em>beacon of hope, revivify</em></td></tr>
-                <tr><td>4th</td><td><em>death ward, guardian of faith</em></td></tr>
+                <tr><td>4th</td><td><em>aura of life, guardian of faith</em></td></tr>
                 <tr><td>5th</td><td><em>flame strike, greater restoration</em></td></tr>
             </table>
         </description>
@@ -52,61 +63,65 @@
             <description>Drahon’s Essence lets you choose from an expanded list of spells when you learn a warlock spell.</description>
         </sheet>
         <spellcasting name="Warlock" extend="true">
-            <extend>ID_PHB_SPELL_BLESS</extend>
             <extend>ID_PHB_SPELL_CURE_WOUNDS</extend>
+            <extend>ID_PHB_SPELL_HEROISM</extend>
             <extend>ID_PHB_SPELL_AID</extend>
             <extend>ID_PHB_SPELL_LESSER_RESTORATION</extend>
             <extend>ID_PHB_SPELL_BEACON_OF_HOPE</extend>
             <extend>ID_PHB_SPELL_REVIVIFY</extend>
-            <extend>ID_PHB_SPELL_DEATH_WARD</extend>
+            <extend>ID_PHB_SPELL_AURA_OF_LIFE</extend>
             <extend>ID_PHB_SPELL_GUARDIAN_OF_FAITH</extend>
             <extend>ID_PHB_SPELL_FLAME_STRIKE</extend>
             <extend>ID_PHB_SPELL_GREATER_RESTORATION</extend>
         </spellcasting>
     </element>
 
-    <element name="Golden Herald" type="Archetype Feature" source="Fall of Edrassia" id="ID_FOE_ARCHETYPE_FEATURE_DRAHONS_ESSENCE_GOLDEN_HERALD">
+    <element name="Golden Sentinel" type="Archetype Feature" source="Fall of Edrassia" id="ID_FOE_ARCHETYPE_FEATURE_DRAHONS_ESSENCE_GOLDEN_SENTINEL">
         <description>
-            <p>When you choose this patron at 1st level, a fragment of Drahon’s Essence takes physical form and binds itself to you. This spirit is your Golden Herald, a Tiny celestial resembling a golden-winged drake, bird, or other small creature of your choice. Its appearance doesn’t change its game statistics.</p>
-            <p class="indent">The Herald is friendly to you and your companions and obeys your commands. It uses the Golden Herald stat block and your proficiency bonus (PB) in several places. It acts immediately after your turn. It can move and use its reaction on its own, but the only action it takes unless you command it is Dodge. On your turn, you can use a bonus action to command it to take the Dash, Disengage, Help, Hide, or Search action. If you are incapacitated, it can take any of those actions without being commanded.</p>
-            <p class="indent">While the Herald is perched on you, it shares your space, cannot be targeted, cannot take damage, and cannot take actions or reactions. It can mount or leave your shoulder using 5 feet of its movement.</p>
-            <p class="indent">While the Herald is within 100 feet of you, you can communicate with it telepathically. As an action, you can see through its eyes and hear what it hears until the start of your next turn, gaining the benefits of its senses. During this time, you are deaf and blind to your own surroundings.</p>
-            <p class="indent">While the Herald is perched on you, you gain the following benefits:</p>
+            <p>When you choose this patron at 1st level, Drahon’s Essence manifests beside you as a Golden Sentinel. It is a Tiny celestial spirit that resembles a golden-winged drake, bird, or another small creature associated with Drahon. Its appearance does not change its statistics.</p>
+            <p class="indent">The Sentinel is friendly to you and your companions, and it obeys your commands. It uses the Golden Sentinel stat block, which uses your proficiency bonus in several places.</p>
+            <h5>Commanding the Sentinel</h5>
+            <p>The Sentinel acts immediately after your turn. It can move and use its reaction on its own, but it takes the Dodge action unless you use a bonus action on your turn to command it to take the Dash, Disengage, Help, Hide, or Search action. If you are incapacitated, the Sentinel can take any of these actions without being commanded.</p>
+            <p class="indent">The Sentinel cannot make attacks.</p>
+            <h5>Shared Senses</h5>
+            <p>While the Sentinel is within 100 feet of you, you can communicate with it telepathically. As an action, you can see through its eyes and hear what it hears until the start of your next turn, gaining the benefits of its senses. During this time, you are blind and deaf to your own surroundings.</p>
+            <h5>Perching</h5>
+            <p>The Sentinel can expend 5 feet of movement to perch on you or another willing creature in its space. While perched, it shares the creature’s space, cannot be targeted or damaged, and cannot move or take actions. It can still use Golden Warning. The Sentinel can leave its perch at the start of its turn without expending movement.</p>
+            <p class="indent">While the Sentinel is perched on you, you gain the following benefits:</p>
             <ul>
                 <li>You gain darkvision out to 60 feet. If you already have darkvision, its range increases by 30 feet.</li>
                 <li>You add your Charisma modifier to Wisdom (Perception) checks and to your passive Wisdom (Perception) score.</li>
                 <li>You have advantage on saving throws against being frightened.</li>
             </ul>
-            <p class="indent">If the Herald is reduced to 0 hit points, it disappears in a harmless burst of golden sparks. You can restore it at the end of a short or long rest. You can also restore it immediately by expending a warlock spell slot as an action, causing it to reappear in an unoccupied space within 5 feet of you with all its hit points.</p>
-            <p class="indent">In addition, when you are reduced to 0 hit points but not killed outright, you can cause your Golden Herald to sacrifice its manifested form. You drop to 1 hit point instead, and each creature of your choice within 10 feet of you takes radiant damage equal to your warlock level. The Herald then disappears as if it had been reduced to 0 hit points.</p>
-            <p class="indent">Once this feature prevents you from falling to 0 hit points, you can’t use it again until you finish a long rest.</p>
+            <h5>Restoring the Sentinel</h5>
+            <p>If the Sentinel is reduced to 0 hit points, it disappears in a burst of warm golden light. It returns with all its hit points when you finish a short or long rest. You can also restore it as an action by expending a warlock spell slot, causing it to appear in an unoccupied space within 5 feet of you with all its hit points.</p>
         </description>
         <sheet>
-            <description>You gain the service of the Golden Herald, a Tiny celestial spirit. While it is perched on you, you gain darkvision out to 60 feet (or +30 feet if you already have darkvision), you add your Charisma modifier to Wisdom (Perception) checks and your passive Perception, and you have advantage on saving throws against being frightened.
-            While the Herald is within 100 feet of you, you can communicate with it telepathically, and as an action you can see through its eyes and hear what it hears until the start of your next turn.
-            If the Herald is reduced to 0 hit points, it disappears and can be restored at the end of a short or long rest, or immediately by expending a warlock spell slot as an action.
-            When you are reduced to 0 hit points but not killed outright, you can cause the Herald to sacrifice itself: you drop to 1 hit point instead, and each creature of your choice within 10 feet of you takes radiant damage equal to your warlock level. You can’t use this again until you finish a long rest.</description>
+            <description>You gain the service of the Golden Sentinel, a Tiny celestial spirit that acts immediately after your turn, taking the Dodge action unless you command it to Dash, Disengage, Help, Hide, or Search. It cannot make attacks.
+            While the Sentinel is within 100 feet of you, you can communicate with it telepathically, and as an action you can see through its eyes and hear what it hears until the start of your next turn.
+            The Sentinel can perch on you or a willing creature. While it is perched on you, you gain darkvision out to 60 feet (or +30 feet if you already have darkvision), you add your Charisma modifier to Wisdom (Perception) checks and your passive Perception, and you have advantage on saving throws against being frightened.
+            If the Sentinel is reduced to 0 hit points, it disappears and returns with all its hit points at the end of a short or long rest, or immediately by expending a warlock spell slot as an action.</description>
         </sheet>
         <rules>
-            <select type="Companion" name="Golden Herald" supports="Golden Herald" default="ID_FOE_COMPANION_GOLDEN_HERALD" />
+            <select type="Companion" name="Golden Sentinel" supports="Golden Sentinel" default="ID_FOE_COMPANION_GOLDEN_SENTINEL" />
         </rules>
     </element>
 
     <!--Companion-->
-    <element name="Golden Herald" type="Companion" source="Fall of Edrassia" id="ID_FOE_COMPANION_GOLDEN_HERALD">
-        <supports>Golden Herald</supports>
+    <element name="Golden Sentinel" type="Companion" source="Fall of Edrassia" id="ID_FOE_COMPANION_GOLDEN_SENTINEL">
+        <supports>Golden Sentinel</supports>
         <description>
-            <p>A fragment of Drahon’s Essence given physical form: a golden draconic spirit that is friendly to you and your companions and obeys your commands.</p>
-            <p><b>Proficiency Bonus (PB)</b> equals your bonus</p>
+            <p>The visible half of a divine fragment of Drahon’s Essence: a golden celestial spirit that is friendly to you and your companions and obeys your commands.</p>
+            <p><b>Proficiency Bonus (PB)</b> equals your proficiency bonus</p>
         </description>
         <setters>
             <set name="size">Tiny</set>
             <set name="type">Celestial</set>
             <set name="alignment">unaligned</set>
-            <set name="ac">13 + PB</set>
-            <set name="hp">5 + five times your warlock level</set>
-            <set name="speed">10 ft., fly 40 ft.</set>
-            <set name="strength">4</set>
+            <set name="ac">12 + PB</set>
+            <set name="hp">3 + three times your warlock level</set>
+            <set name="speed">10 ft., fly 50 ft.</set>
+            <set name="strength">3</set>
             <set name="dexterity">16</set>
             <set name="constitution">12</set>
             <set name="intelligence">8</set>
@@ -119,33 +134,30 @@
             <set name="senses">darkvision 60 ft., passive Perception 12 plus PB</set>
             <set name="languages">understands the languages you speak; telepathy with you while within 100 ft.</set>
             <set name="challenge">—</set>
-            <set name="traits">ID_FOE_COMPANION_TRAIT_GOLDEN_HERALD_ESSENCE_BOUND,ID_FOE_COMPANION_TRAIT_GOLDEN_HERALD_FLYBY,ID_FOE_COMPANION_TRAIT_GOLDEN_HERALD_ILLUMINATION</set>
-            <set name="actions">ID_FOE_COMPANION_ACTION_GOLDEN_HERALD_GLEAMING_REND</set>
+            <set name="traits">ID_FOE_COMPANION_TRAIT_GOLDEN_SENTINEL_ESSENCE_BOUND,ID_FOE_COMPANION_TRAIT_GOLDEN_SENTINEL_FLYBY,ID_FOE_COMPANION_TRAIT_GOLDEN_SENTINEL_GOLDEN_LIGHT</set>
+            <set name="reactions">ID_FOE_COMPANION_REACTION_GOLDEN_SENTINEL_GOLDEN_WARNING</set>
         </setters>
         <rules>
-            <stat name="companion:ac" value="13" />
+            <stat name="companion:ac" value="12" />
             <stat name="companion:ac" value="proficiency" />
-            <stat name="companion:hp:max" value="5" bonus="base" />
-            <stat name="companion:hp:max" value="level:warlock" />
-            <stat name="companion:hp:max" value="level:warlock" />
+            <stat name="companion:hp:max" value="3" bonus="base" />
             <stat name="companion:hp:max" value="level:warlock" />
             <stat name="companion:hp:max" value="level:warlock" />
             <stat name="companion:hp:max" value="level:warlock" />
             <stat name="companion:speed" value="10" bonus="base" />
-            <stat name="companion:speed:fly" value="40" bonus="base" />
+            <stat name="companion:speed:fly" value="50" bonus="base" />
             <stat name="companion:proficiency" value="proficiency" bonus="base" />
             <stat name="companion:proficiency" value="-2" bonus="base companion PB removal"/>
-            <stat name="golden herald:gleaming rend:dice" value="1" bonus="base" />
-            <stat name="golden herald:gleaming rend:dice" value="2" bonus="base" requirements="[level:warlock:10]" />
-            <grant type="Companion Trait" id="ID_FOE_COMPANION_TRAIT_GOLDEN_HERALD_ESSENCE_BOUND" />
+            <stat name="golden warning:count" value="proficiency" bonus="base" />
+            <grant type="Companion Trait" id="ID_FOE_COMPANION_TRAIT_GOLDEN_SENTINEL_ESSENCE_BOUND" />
         </rules>
     </element>
-    <element name="Essence Bound" type="Companion Trait" source="Fall of Edrassia" id="ID_FOE_COMPANION_TRAIT_GOLDEN_HERALD_ESSENCE_BOUND">
+    <element name="Essence Bound" type="Companion Trait" source="Fall of Edrassia" id="ID_FOE_COMPANION_TRAIT_GOLDEN_SENTINEL_ESSENCE_BOUND">
         <description>
-            <p>The Herald adds your proficiency bonus to any ability check or saving throw it makes that doesn’t already include your proficiency bonus.</p>
+            <p>The Sentinel adds your proficiency bonus to any ability check or saving throw it makes that does not already include that bonus.</p>
         </description>
         <sheet display="false">
-            <description>The Herald adds your proficiency bonus to any ability check or saving throw it makes that doesn’t already include your proficiency bonus.</description>
+            <description>The Sentinel adds your proficiency bonus to any ability check or saving throw it makes that does not already include that bonus.</description>
         </sheet>
         <rules>
             <stat name="companion:acrobatics:proficiency" value="companion:proficiency" bonus="base" />
@@ -174,65 +186,56 @@
             <stat name="companion:charisma:save:proficiency" value="companion:proficiency" bonus="base" />
         </rules>
     </element>
-    <element name="Flyby" type="Companion Trait" source="Fall of Edrassia" id="ID_FOE_COMPANION_TRAIT_GOLDEN_HERALD_FLYBY">
+    <element name="Flyby" type="Companion Trait" source="Fall of Edrassia" id="ID_FOE_COMPANION_TRAIT_GOLDEN_SENTINEL_FLYBY">
         <description>
-            <p>The Herald doesn’t provoke opportunity attacks when it flies out of an enemy’s reach.</p>
+            <p>The Sentinel does not provoke opportunity attacks when it flies out of an enemy’s reach.</p>
         </description>
         <sheet>
-            <description>The Herald doesn’t provoke opportunity attacks when it flies out of an enemy’s reach.</description>
+            <description>The Sentinel does not provoke opportunity attacks when it flies out of an enemy’s reach.</description>
         </sheet>
     </element>
-    <element name="Illumination" type="Companion Trait" source="Fall of Edrassia" id="ID_FOE_COMPANION_TRAIT_GOLDEN_HERALD_ILLUMINATION">
+    <element name="Golden Light" type="Companion Trait" source="Fall of Edrassia" id="ID_FOE_COMPANION_TRAIT_GOLDEN_SENTINEL_GOLDEN_LIGHT">
         <description>
-            <p>The Herald can shed bright light in a 10-foot radius and dim light for an additional 10 feet, or extinguish this light, without using an action.</p>
+            <p>The Sentinel can shed bright light in a 10-foot radius and dim light for an additional 10 feet. It can ignite or extinguish this light without using an action.</p>
         </description>
         <sheet>
-            <description>The Herald can shed bright light in a 10-foot radius and dim light for an additional 10 feet, or extinguish this light, without using an action.</description>
+            <description>The Sentinel can shed bright light in a 10-foot radius and dim light for an additional 10 feet. It can ignite or extinguish this light without using an action.</description>
         </sheet>
     </element>
-    <element name="Gleaming Rend" type="Companion Action" source="Fall of Edrassia" id="ID_FOE_COMPANION_ACTION_GOLDEN_HERALD_GLEAMING_REND">
+    <element name="Golden Warning" type="Companion Reaction" source="Fall of Edrassia" id="ID_FOE_COMPANION_REACTION_GOLDEN_SENTINEL_GOLDEN_WARNING">
         <description>
-            <p><i>Melee Spell Attack:</i> your spell attack modifier to hit, reach 5 ft., one creature. <i>Hit:</i> 1d4 + PB radiant damage. The damage becomes 2d4 + PB at 10th level.</p>
-            <p class="indent">The Herald can use Gleaming Rend only when you command it to take this action. When you do so, you forgo one of your own attacks as part of the Attack action instead of using a bonus action. If you cannot make more than one attack with the Attack action, commanding this attack requires your action.</p>
+            <p>When the creature on which the Sentinel is perched is hit by an attack, the Sentinel adds your proficiency bonus to that creature’s Armor Class against the triggering attack, potentially causing the attack to miss.</p>
+            <p class="indent">The Sentinel can use Golden Warning a number of times equal to your proficiency bonus. It regains all expended uses when you finish a long rest.</p>
         </description>
-        <sheet>
-            <description>Melee Spell Attack: your spell attack modifier to hit, reach 5 ft., one creature. Hit: {{golden herald:gleaming rend:dice}}d4 + PB radiant damage.
-            The Herald can use Gleaming Rend only when you command it to take this action. When you do so, you forgo one of your own attacks as part of the Attack action instead of using a bonus action. If you cannot make more than one attack with the Attack action, commanding this attack requires your action.</description>
+        <sheet usage="{{golden warning:count}}/Long Rest">
+            <description>When the creature on which the Sentinel is perched is hit by an attack, the Sentinel adds your proficiency bonus to that creature’s Armor Class against the triggering attack, potentially causing the attack to miss.</description>
         </sheet>
     </element>
 
-    <element name="Wings of Intercession" type="Archetype Feature" source="Fall of Edrassia" id="ID_FOE_ARCHETYPE_FEATURE_DRAHONS_ESSENCE_WINGS_OF_INTERCESSION">
+    <element name="One Soul, Two Wings" type="Archetype Feature" source="Fall of Edrassia" id="ID_FOE_ARCHETYPE_FEATURE_DRAHONS_ESSENCE_ONE_SOUL_TWO_WINGS">
         <description>
-            <p>Starting at 6th level, Drahon’s Essence moves to place you between destruction and its victim. When you or a creature you can see within 30 feet of you takes damage, you can use your reaction to manifest spectral golden wings around that creature. Reduce the damage by 1d10 + your Charisma modifier + your warlock level.</p>
-            <p class="indent">After the damage is reduced, the protected creature can move up to 10 feet to an unoccupied space it can see. This movement doesn’t provoke opportunity attacks. If your Golden Herald is present, you can also cause it to teleport to the protected creature’s space and perch on it. While perched on another creature this way, the Herald grants no benefits and returns to you at the start of your next turn.</p>
+            <p>Starting at 6th level, your bond reveals that you and the Golden Sentinel are two manifestations of the same divine ember.</p>
+            <p class="indent">As a bonus action while the Sentinel is within 100 feet of you, you can merge it into your body for 10 minutes. The Sentinel disappears, immense spectral wings form behind you, and you gain the following benefits for the duration:</p>
+            <ul>
+                <li>You gain a flying speed equal to your walking speed plus 10 feet and can hover.</li>
+                <li>You shed dim golden light in a 10-foot radius. You can suppress or restore this light without using an action.</li>
+                <li>Golden Warning can protect you or any creature you can see within 30 feet of you. Because the Sentinel is merged with you, you use your reaction to activate Golden Warning.</li>
+                <li>When Golden Warning causes an attack to miss, the protected creature can immediately move up to 10 feet without provoking opportunity attacks.</li>
+            </ul>
+            <p class="indent">The transformation ends early if you are incapacitated or if you end it as a bonus action. When it ends, the Sentinel appears in your space or in the nearest unoccupied space.</p>
             <p class="indent">You can use this feature a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</p>
         </description>
-        <sheet action="Reaction" usage="{{wings of intercession:count}}/Long Rest">
-            <description>When you or a creature you can see within 30 feet of you takes damage, you can manifest spectral golden wings around that creature, reducing the damage by 1d10 + your Charisma modifier + your warlock level. The protected creature can then move up to 10 feet to an unoccupied space it can see without provoking opportunity attacks. If your Golden Herald is present, you can cause it to teleport to the protected creature’s space and perch on it; while perched this way it grants no benefits and returns to you at the start of your next turn.</description>
+        <sheet action="Bonus Action" usage="{{one soul two wings:count}}/Long Rest">
+            <description>While the Sentinel is within 100 feet of you, you can merge it into your body for 10 minutes, until you end it as a bonus action, or until you are incapacitated. While merged, you gain a flying speed equal to your walking speed plus 10 feet and can hover, you shed dim golden light in a 10-foot radius, and Golden Warning can protect you or any creature you can see within 30 feet of you (using your reaction); when it causes an attack to miss, the protected creature can immediately move up to 10 feet without provoking opportunity attacks. When the transformation ends, the Sentinel appears in your space or the nearest unoccupied space.</description>
         </sheet>
         <rules>
-            <stat name="wings of intercession:count" value="proficiency" bonus="base" />
+            <stat name="one soul two wings:count" value="proficiency" bonus="base" />
         </rules>
     </element>
 
-    <element name="Aspect of the Golden Wing" type="Archetype Feature" source="Fall of Edrassia" id="ID_FOE_ARCHETYPE_FEATURE_DRAHONS_ESSENCE_ASPECT_OF_THE_GOLDEN_WING">
+    <element name="The Ember Endures" type="Archetype Feature" source="Fall of Edrassia" id="ID_FOE_ARCHETYPE_FEATURE_DRAHONS_ESSENCE_THE_EMBER_ENDURES">
         <description>
-            <p>Also at 6th level, while your Golden Herald is perched on you, you can use a bonus action to merge with it and assume the Aspect of the Golden Wing. The transformation lasts for 10 minutes, until you end it as a bonus action, or until you are incapacitated. While transformed:</p>
-            <ul>
-                <li>You manifest spectral wings and gain a flying speed of 40 feet.</li>
-                <li>You can pass through a space as narrow as 1 inch without squeezing.</li>
-                <li>You cannot cast spells, make attacks, or force another creature to make a saving throw.</li>
-            </ul>
-            <p class="indent">Once you use this feature, you can’t use it again until you finish a short or long rest.</p>
-        </description>
-        <sheet action="Bonus Action" usage="1/Short Rest">
-            <description>While your Golden Herald is perched on you, you can merge with it for 10 minutes, until you end it as a bonus action, or until you are incapacitated. While transformed, you gain a flying speed of 40 feet and can pass through a space as narrow as 1 inch without squeezing, but you cannot cast spells, make attacks, or force another creature to make a saving throw.</description>
-        </sheet>
-    </element>
-
-    <element name="The Essence Endures" type="Archetype Feature" source="Fall of Edrassia" id="ID_FOE_ARCHETYPE_FEATURE_DRAHONS_ESSENCE_THE_ESSENCE_ENDURES">
-        <description>
-            <p>Starting at 10th level, the remnant within you refuses to allow Drahon’s light to be extinguished again. You gain resistance to necrotic and radiant damage, and you have advantage on death saving throws.</p>
+            <p>Starting at 10th level, Drahon’s Essence refuses to allow a protected soul to be extinguished. You gain resistance to necrotic and radiant damage, and you have advantage on death saving throws.</p>
         </description>
         <sheet>
             <description>You gain resistance to necrotic and radiant damage, and you have advantage on death saving throws.</description>
@@ -243,21 +246,29 @@
         </rules>
     </element>
 
-    <element name="Drahon’s Living Legacy" type="Archetype Feature" source="Fall of Edrassia" id="ID_FOE_ARCHETYPE_FEATURE_DRAHONS_ESSENCE_DRAHONS_LIVING_LEGACY">
+    <element name="The Sentinel’s Sacrifice" type="Archetype Feature" source="Fall of Edrassia" id="ID_FOE_ARCHETYPE_FEATURE_DRAHONS_ESSENCE_THE_SENTINELS_SACRIFICE">
         <description>
-            <p>Starting at 14th level, you can briefly awaken the full power of Drahon’s Essence. As a bonus action, you enter the Living Legacy state for 1 minute. When you transform, choose any number of creatures you can see within 30 feet of you. Each chosen creature regains hit points equal to 2d8 + your Charisma modifier, and you can end either the charmed or frightened condition on it.</p>
-            <p class="indent">For the duration, you gain the following benefits:</p>
-            <ul>
-                <li>Two immense golden wings appear from your back. You gain a flying speed of 60 feet and can hover.</li>
-                <li>You shed bright light in a 30-foot radius and dim light for an additional 30 feet.</li>
-                <li>Once on each of your turns when you deal damage to a creature, you can deal an additional 2d8 radiant damage to that creature.</li>
-                <li>When a creature you can see within 30 feet of you takes damage, you can use your reaction to grant it resistance to that instance of damage. If you do, the Living Legacy state ends at the end of the current turn.</li>
-            </ul>
-            <p class="indent">Once you use this feature, you can’t use it again until you finish a long rest.</p>
+            <p>Also at 10th level, when you or a creature you can see within 30 feet of the Golden Sentinel is reduced to 0 hit points but not killed outright, the Sentinel can use its reaction to intervene. While the Sentinel is merged with you through One Soul, Two Wings, measure this range from you instead.</p>
+            <p class="indent">The dying creature drops to 1 hit point instead and gains temporary hit points equal to your warlock level + your Charisma modifier.</p>
+            <p class="indent">The Sentinel then disappears. If it was merged with you, that transformation immediately ends. A Sentinel sacrificed this way cannot be restored with a spell slot or a short rest; it returns when you finish a long rest.</p>
+            <p class="indent">Once the Sentinel uses this reaction, it cannot do so again until you finish a long rest.</p>
         </description>
-        <sheet action="Bonus Action" usage="1/Long Rest">
-            <description>You enter the Living Legacy state for 1 minute. When you transform, choose any number of creatures you can see within 30 feet of you; each regains 2d8 + your Charisma modifier hit points, and you can end the charmed or frightened condition on it.
-            For the duration: you gain a flying speed of 60 feet and can hover; you shed bright light in a 30-foot radius and dim light for an additional 30 feet; once on each of your turns when you deal damage to a creature, you can deal an additional 2d8 radiant damage to it; and when a creature you can see within 30 feet of you takes damage, you can use your reaction to grant it resistance to that instance of damage, ending the Living Legacy state at the end of the current turn.</description>
+        <sheet action="Reaction" usage="1/Long Rest">
+            <description>When you or a creature you can see within 30 feet of the Golden Sentinel (or within 30 feet of you, while the Sentinel is merged with you) is reduced to 0 hit points but not killed outright, the Sentinel can intervene: the dying creature drops to 1 hit point instead and gains temporary hit points equal to your warlock level + your Charisma modifier. The Sentinel then disappears and cannot be restored with a spell slot or a short rest until you finish a long rest.</description>
+        </sheet>
+    </element>
+
+    <element name="Drahon’s Final Dawn" type="Archetype Feature" source="Fall of Edrassia" id="ID_FOE_ARCHETYPE_FEATURE_DRAHONS_ESSENCE_DRAHONS_FINAL_DAWN">
+        <description>
+            <p>Starting at 14th level, you can release the memory of Drahon’s final defiance, transforming the Golden Sentinel into the shadow of a colossal golden dragon.</p>
+            <p class="indent">As an action, choose yourself or your Golden Sentinel as the point of origin. If you choose the Sentinel, it must be within 100 feet of you. A spectral dragon unfurls its wings from that point and releases divine light in a 30-foot cone.</p>
+            <p class="indent">Each hostile creature in the cone must make a Constitution saving throw against your warlock spell save DC. On a failed save, a creature takes 8d8 radiant damage and is blinded until the end of your next turn. On a successful save, it takes half as much damage and is not blinded.</p>
+            <p class="indent">Each creature of your choice in the cone regains hit points equal to 4d8 + your Charisma modifier. A creature healed in this way can immediately end one effect causing it to be charmed or frightened.</p>
+            <p class="indent">After the light fades, golden spectral feathers and scales remain suspended in the air until the start of your next turn. The affected area is bright light during that time, and magical darkness created by a spell of 5th level or lower is dispelled within it.</p>
+            <p class="indent">Once you use this feature, you cannot use it again until you finish a long rest.</p>
+        </description>
+        <sheet action="Action" usage="1/Long Rest">
+            <description>Choose yourself or your Golden Sentinel (within 100 feet of you) as the point of origin. A spectral dragon unfurls its wings and releases divine light in a 30-foot cone. Each hostile creature in the cone makes a Constitution saving throw against your warlock spell save DC, taking 8d8 radiant damage and being blinded until the end of your next turn on a failure, or half damage and no blindness on a success. Each creature of your choice in the cone regains 4d8 + your Charisma modifier hit points and can immediately end one effect causing it to be charmed or frightened. The affected area sheds bright light and dispels magical darkness of 5th level or lower until the start of your next turn.</description>
         </sheet>
     </element>
 </elements>
