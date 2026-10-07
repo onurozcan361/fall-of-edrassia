@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Drahonic Cantrips</name>
+        <description>The five Drahonic cantrips granted by the Golden Scale: Drahonic Blast, Radiant Guidance, Blast the Dead, Resonating Blade, and Radiant Burst.</description>
+        <update version="1.0.0">
+            <file name="spells.xml" url="https://raw.githubusercontent.com/onurozcan361/fall-of-edrassia/main/fall-of-edrassia/spells.xml" />
+        </update>
+    </info>
+
+    <element name="Drahonic Blast" type="Spell" source="Fall of Edrassia" id="ID_FOE_SPELL_DRAHONIC_BLAST">
+        <supports>Warlock, Cleric</supports>
+        <description>
+            <p>A beam of golden light streaks toward one creature you can see within range. Make a ranged spell attack against the target. On a hit, it takes 1d12 radiant damage. For a heartbeat, the beam resembles the breath of a golden dragon.</p>
+            <p class="indent"><b><i>At Higher Levels.</i></b> This spell’s damage increases by 1d12 when you reach 5th level (2d12), 11th level (3d12), and 17th level (4d12). The spell always produces one beam and targets one creature.</p>
+        </description>
+        <setters>
+            <set name="keywords">radiant</set>
+            <set name="level">0</set>
+            <set name="school">Evocation</set>
+            <set name="time">1 action</set>
+            <set name="duration">Instantaneous</set>
+            <set name="range">120 feet</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent" />
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+
+    <element name="Radiant Guidance" type="Spell" source="Fall of Edrassia" id="ID_FOE_SPELL_RADIANT_GUIDANCE">
+        <supports>Warlock, Cleric</supports>
+        <description>
+            <p>You direct a thread of Drahon’s essence into one willing creature within range. Once before the spell ends, the target can roll 1d8 and add it to one ability check of its choice. It can roll the die before or after making the check, but before the DM announces the outcome. The spell then ends.</p>
+            <p class="indent">The recipient feels a moment of calm and renewed resolve. This spell supplies no knowledge and does not make an impossible task possible.</p>
+        </description>
+        <setters>
+            <set name="level">0</set>
+            <set name="school">Divination</set>
+            <set name="time">1 action</set>
+            <set name="duration">Concentration, up to 1 minute</set>
+            <set name="range">10 feet</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent" />
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+
+    <element name="Blast the Dead" type="Spell" source="Fall of Edrassia" id="ID_FOE_SPELL_BLAST_THE_DEAD">
+        <supports>Warlock, Cleric</supports>
+        <description>
+            <p>You point at one creature you can see within range. A distant dragon’s roar accompanies a pulse of golden light. The target must succeed on a Wisdom saving throw or take 2d6 radiant damage. If the target is missing any hit points, it instead takes 2d8 radiant damage. On a successful save, it takes no damage.</p>
+            <p class="indent">The spell is named for Drahon’s opposition to undeath. It burns away unnatural power, but can also strike a living foe. It cannot restore a soul, resurrect the dead, or automatically end possession.</p>
+            <p class="indent"><b><i>At Higher Levels.</i></b> Both damage expressions increase at 5th level (4d6 or 4d8), 11th level (6d6 or 6d8), and 17th level (8d6 or 8d8).</p>
+        </description>
+        <setters>
+            <set name="keywords">radiant</set>
+            <set name="level">0</set>
+            <set name="school">Evocation</set>
+            <set name="time">1 action</set>
+            <set name="duration">Instantaneous</set>
+            <set name="range">60 feet</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent" />
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+
+    <element name="Resonating Blade" type="Spell" source="Fall of Edrassia" id="ID_FOE_SPELL_RESONATING_BLADE">
+        <supports>Warlock, Cleric</supports>
+        <description>
+            <p>You brandish the weapon used in the casting and make a melee attack with it against one creature within 5 feet of you. Use the weapon’s normal attack modifier. On a hit, the target suffers the attack’s normal effects and becomes sheathed in golden light until the start of your next turn.</p>
+            <p class="indent">If the target willingly moves 5 feet or more before then, it takes 1d12 radiant damage, and the spell ends. Forced movement and teleportation do not trigger this damage.</p>
+            <p class="indent"><b><i>At Higher Levels.</i></b> Starting at 5th level, the attack deals additional radiant damage on a hit. Both the additional damage and the movement damage increase as shown below.</p>
+            <h5>Resonating Blade Scaling</h5>
+            <table>
+                <thead><tr><td>Character Level</td><td>Additional Damage on Hit</td><td>Movement Damage</td></tr></thead>
+                <tr><td>1st–4th</td><td>None</td><td>1d12</td></tr>
+                <tr><td>5th–10th</td><td>1d12</td><td>2d12</td></tr>
+                <tr><td>11th–16th</td><td>2d12</td><td>3d12</td></tr>
+                <tr><td>17th or higher</td><td>3d12</td><td>4d12</td></tr>
+            </table>
+        </description>
+        <setters>
+            <set name="keywords">radiant</set>
+            <set name="level">0</set>
+            <set name="school">Evocation</set>
+            <set name="time">1 action</set>
+            <set name="duration">1 round</set>
+            <set name="range">Self (5-foot radius)</set>
+            <set name="hasVerbalComponent">false</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">a melee weapon worth at least 1 sp</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+
+    <element name="Radiant Burst" type="Spell" source="Fall of Edrassia" id="ID_FOE_SPELL_RADIANT_BURST">
+        <supports>Warlock, Cleric</supports>
+        <description>
+            <p>You release a ring of golden, scale-shaped blades. Each creature other than you within 5 feet of you must succeed on a Dexterity saving throw or take 1d8 radiant damage. On a successful save, a creature takes no damage.</p>
+            <p class="indent">The blades vanish as soon as they strike. This spell affects allies within its area as well as enemies.</p>
+            <p class="indent"><b><i>At Higher Levels.</i></b> The damage increases to 2d8 at 5th level, 3d8 at 11th level, and 4d8 at 17th level.</p>
+        </description>
+        <setters>
+            <set name="keywords">radiant</set>
+            <set name="level">0</set>
+            <set name="school">Evocation</set>
+            <set name="time">1 action</set>
+            <set name="duration">Instantaneous</set>
+            <set name="range">Self (5-foot radius)</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent" />
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+</elements>

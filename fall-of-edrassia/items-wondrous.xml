@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name>Wondrous Items</name>
-        <update version="1.0.4">
+        <update version="1.0.5">
             <file name="items-wondrous.xml" url="https://raw.githubusercontent.com/onurozcan361/fall-of-edrassia/main/fall-of-edrassia/items-wondrous.xml" />
 
         </update>
@@ -23,25 +23,58 @@
             </setters>
         </element>
 
-        <element name="The Crovium" type="Magic Item" source="Fall of Edrassia" id="ID_FOE_MAGIC_ITEM_CROVIUM">
+        <element name="Golden Scale" type="Magic Item" source="Fall of Edrassia" id="ID_FOE_MAGIC_ITEM_GOLDEN_SCALE">
             <description>
-            <p> The blessing of the Raven Queen became an object. </p>
-            <p class="indent">  The Crovium allows the user to tap into the power of the Raven Queen. When communed with, the Crovium can give:</p>
-            <ul>
-				<li>+4 dices for a duration.</li>
-				<li>Turn a dice into Nat 20</li>
-				<li>Revive a dead person</li>
-                <li>Speak with the dead as long as it takes</li>
-                <li>make the user invincible for a timeon</li>
-			</ul>
+                <p class="flavor">A golden crystalline scale rests within a dark steel setting. Its light pulses slowly beneath the surface. When the wearer shields another person, the crystal grows warm against their chest.</p>
+                <h5>The Essence That Remains</h5>
+                <p>Drahon’s death did not erase the holy power he had shared with the people of Edrassia. Traces of that essence remain in living bearers and in the holy trees that draw it into themselves. The Golden Scale holds a fragment of the same power.</p>
+                <p class="indent">The necklace carries an echo of Drahon’s courage and instinct to protect. Its presence comes as warmth, fleeting impressions, and a sudden certainty that someone should not be left behind.</p>
+                <h5>Passive Benefits</h5>
+                <p><b>Drahonic Cantrips.</b> While attuned to the necklace, you know two cantrips of your choice from the following list: <i>Drahonic Blast, Radiant Guidance, Blast the Dead, Resonating Blade,</i> and <i>Radiant Burst</i>. These do not count against your number of cantrips known. You may replace one choice whenever you finish a long rest.</p>
+                <p class="indent">Use Charisma if you attuned as a Golden Wing warlock, or Wisdom if you attuned as a Light Domain cleric. If you qualify as both, choose when you attune. This ability governs all the necklace’s spells and features.</p>
+                <p class="indent"><b>Spell save DC:</b> 8 + your proficiency bonus + your chosen ability modifier.</p>
+                <p class="indent"><b>Spell attack modifier:</b> your proficiency bonus + your chosen ability modifier.</p>
+                <p><b>Radiant Critical.</b> When you score a critical hit with an attack that deals radiant damage, roll four times the attack’s radiant damage dice instead of twice the dice. Other damage dice follow the normal critical hit rules. Flat damage bonuses are added once.</p>
+                <p class="indent">This applies only to damage dealt by the critical hit. Later damage, such as Resonating Blade’s movement damage, is unaffected.</p>
+                <p><b>Essence Within.</b> You have advantage on Intelligence (History) checks to recall information about Drahon, his deeds, and his connection to Edrassia. You also have advantage on Wisdom (Insight) checks to understand a dragon’s intentions and Charisma (Persuasion) checks when appealing to a dragon’s reason, memory, or desire to protect.</p>
+                <h5>Drahon’s Lightseer</h5>
+                <p>As an action, focus on one creature or holy tree you can see within 30 feet. You perceive whether Drahon’s essence is present within it. The essence appears as faint golden threads visible only to you.</p>
+                <p class="indent">If the essence has been disturbed or suppressed, the threads appear dim or broken. This reveals that something has affected the essence, but does not identify the cause, reveal allegiance, or read thoughts. A creature without Drahon’s essence may still be kind, and a bearer may still act cruelly.</p>
+                <p class="indent">This sight cannot reveal a disguised creature’s true identity, see through physical barriers, or bypass magic that prevents divination.</p>
+                <h5>Light of Guidance</h5>
+                <p>Once per long rest, you may spend 1 minute holding the scale and concentrating on a specific objective. The DM gives you a brief impression suggesting one useful next step available to you: warmth toward a nearby passage, the image of someone you have met, or a remembered detail taking on new significance.</p>
+                <p class="indent">The guidance draws on your experiences and traces of Drahon’s essence in the immediate area. It cannot reveal an unknown password, identify a murderer without evidence, predict the future, or provide knowledge unavailable through either source. If there is no useful connection, the scale remains quiet and the use is not expended.</p>
+                <p class="indent">The impression offers a lead. You must still interpret it, investigate it, and decide how to act.</p>
+                <h5>Aura of Drahon</h5>
+                <p>As a bonus action, you release the essence held within the scale. A faint outline of golden wings appears behind you, and warm light fills a 10-foot radius. The aura moves with you, lasts for 1 minute, and ends early if you become incapacitated.</p>
+                <p class="indent">When you activate the aura, you and each creature of your choice within it gain temporary hit points equal to 2d8 + your chosen ability modifier (minimum 1). Roll once for all recipients. These temporary hit points remain until depleted or until you finish a long rest.</p>
+                <p class="indent">While within the aura, you and creatures of your choice have resistance to radiant damage and advantage on saving throws against being frightened. You also shed bright light within the aura and dim light for an additional 10 feet.</p>
+                <p class="indent">Once used, this property cannot be used again until you finish a long rest.</p>
+                <h5>Manifestations</h5>
+                <p>When you cast a spell through the scale, its light briefly takes the shape of a wing, claw, or overlapping dragon scales. Radiant Guidance feels like a steady hand at the recipient’s back. Blast the Dead carries a low dragon’s roar beneath its flash of gold.</p>
+                <h5>Wings of the Golden One</h5>
+                <p class="flavor">Golden threads spill from the scale and gather into the shape of a great dragon. Its translucent wings shelter those beneath them. It lowers its back to offer passage.</p>
+                <p><b>Summon the Dragon.</b> Once per long rest, you may spend 10 uninterrupted minutes holding the scale to summon a Huge draconic spirit in an unoccupied space within 30 feet. It is a manifestation of Drahon’s protective essence, rather than Drahon himself or a living dragon.</p>
+                <p class="indent">The spirit remains for up to 2 hours, requires your concentration as if concentrating on a spell, and disappears if you end your attunement. You may dismiss it as an action. You can have only one spirit summoned through this property at a time.</p>
+                <p><b>Travel Companion.</b> The dragon can carry up to five willing Medium or smaller creatures, including you, and their equipment, to a combined maximum of 1,250 pounds. You must remain mounted for it to move. Mounting or dismounting costs half a creature’s speed.</p>
+                <p class="indent">It has a walking speed of 30 feet and a flying speed of 60 feet, and can hover. For overland travel in suitable conditions, it covers 6 miles per hour, up to 12 miles per summoning. It cannot Dash or benefit from effects that increase its speed.</p>
+                <p class="indent">You guide it verbally without spending an action. It understands your directions but cannot speak, scout independently, or navigate to a place whose location you do not know. It occupies physical space and cannot pass through solid objects. Severe weather can delay its journey or force it to land, at the DM’s discretion.</p>
+                <p><b>A Guardian’s Restraint.</b> The dragon cannot attack, use a breath weapon, cast spells, manipulate objects, or take reactions. It provides no cover and cannot be used to ram creatures or structures. In initiative, it moves immediately after your turn and takes no actions.</p>
+                <p class="indent">If a rider makes an attack, deals damage, or forces another creature to make a saving throw, the summoning immediately ends. This includes attacks made by dropping objects from its back. The spirit can carry passengers away from danger, but offers no platform for sustained aerial combat.</p>
+                <p><b>Vulnerability and Safe Descent.</b> The spirit has AC 14, 30 hit points, and a +3 bonus to all saving throws. It is immune to poison damage and the charmed, frightened, and poisoned conditions. It cannot regain hit points or gain temporary hit points.</p>
+                <p class="indent">If it disappears while carrying passengers aloft, its wings dissolve into a cushion of golden light. Each passenger and their carried equipment descend 60 feet per round until reaching the ground, taking no damage from that descent. During this descent, passengers cannot move horizontally using the spirit’s magic.</p>
+                <p class="indent">This protection applies only to passengers aboard when the summoning ends. A creature that jumps or falls off earlier receives no protection from this property.</p>
             </description>
             <setters>
                 <set name="category">Wondrous Items</set>
                 <set name="cost" currency="gp">0</set>
-                <set name="weight" lb="12">12 lb.</set>
+                <set name="weight" lb="1">1 lb.</set>
                 <set name="type">Wondrous Item</set>
-                <set name="rarity">Rare</set>
-                <set name="attunement">true</set>
+                <set name="rarity">Legendary</set>
+                <set name="attunement" addition="by a Golden Wing warlock or Light Domain cleric">true</set>
             </setters>
+            <rules>
+                <select type="Spell" name="Drahonic Cantrips" supports="ID_FOE_SPELL_DRAHONIC_BLAST|ID_FOE_SPELL_RADIANT_GUIDANCE|ID_FOE_SPELL_BLAST_THE_DEAD|ID_FOE_SPELL_RESONATING_BLADE|ID_FOE_SPELL_RADIANT_BURST" number="2" />
+            </rules>
         </element>
 </elements>
