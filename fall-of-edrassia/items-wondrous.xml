@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name>Wondrous Items</name>
-        <update version="1.0.6">
+        <update version="1.0.7">
             <file name="items-wondrous.xml" url="https://raw.githubusercontent.com/onurozcan361/fall-of-edrassia/main/fall-of-edrassia/items-wondrous.xml" />
 
         </update>
@@ -30,7 +30,7 @@
                 <p>Drahon’s death did not erase the holy power he had shared with the people of Edrassia. Traces of that essence remain in living bearers and in the holy trees that draw it into themselves. The Golden Scale holds a fragment of the same power.</p>
                 <p class="indent">The necklace carries an echo of Drahon’s courage and instinct to protect. Its presence comes as warmth, fleeting impressions, and a sudden certainty that someone should not be left behind.</p>
                 <h5>Passive Benefits</h5>
-                <p><b>Drahonic Cantrips.</b> While attuned to the necklace, you know two cantrips of your choice from the following list: <i>Drahonic Blast, Radiant Guidance, Blast the Dead, Resonating Blade,</i> and <i>Radiant Burst</i>. These do not count against your number of cantrips known. You may replace one choice whenever you finish a long rest.</p>
+                <p><b>Drahonic Cantrips.</b> While attuned to the necklace, you have access to all five Drahonic cantrips: <i>Drahonic Blast, Radiant Guidance, Blast the Dead, Resonating Blade,</i> and <i>Radiant Burst</i>. Of these, you may have two active at a time; these do not count against your number of cantrips known. You may change which two are active whenever you finish a long rest.</p>
                 <p class="indent">Charisma is your spellcasting ability for all the necklace’s spells and features.</p>
                 <p class="indent"><b>Spell save DC:</b> 8 + your proficiency bonus + your Charisma modifier.</p>
                 <p class="indent"><b>Spell attack modifier:</b> your proficiency bonus + your Charisma modifier.</p>
@@ -74,7 +74,11 @@
                 <set name="attunement" addition="by a Golden Wing warlock or Light Domain cleric">true</set>
             </setters>
             <rules>
-                <select type="Spell" name="Drahonic Cantrips" supports="ID_FOE_SPELL_DRAHONIC_BLAST|ID_FOE_SPELL_RADIANT_GUIDANCE|ID_FOE_SPELL_BLAST_THE_DEAD|ID_FOE_SPELL_RESONATING_BLADE|ID_FOE_SPELL_RADIANT_BURST" number="2" />
+                <grant type="Spell" id="ID_FOE_SPELL_DRAHONIC_BLAST" />
+                <grant type="Spell" id="ID_FOE_SPELL_RADIANT_GUIDANCE" />
+                <grant type="Spell" id="ID_FOE_SPELL_BLAST_THE_DEAD" />
+                <grant type="Spell" id="ID_FOE_SPELL_RESONATING_BLADE" />
+                <grant type="Spell" id="ID_FOE_SPELL_RADIANT_BURST" />
             </rules>
         </element>
 </elements>
